@@ -26,7 +26,7 @@
  -  css style( flex box/ css grid ) / todoList작업 (생성, 삭제) <br /><br />
 
   <b>[2021.1.3 - 8 일차]  </b>
- - todoList작업 ( check box / 밑줄작업 ) / 프로미스(promise) 1. 콜백지옥 예시 2. 기존 promise 3. new promise ( async / await ) / 자바스크립트 이벤트 루프 이론<br /><br />
+ - todoList작업 ( check box / 밑줄작업 ) / 프로미스(promise) 1. 콜백지옥 예시 2. 기존 promise 3. new promise ( async / await ) / API연동 / 자바스크립트 이벤트 루프 이론<br /><br />
 
   <b>[2021.1.4 - 9 일차]  </b>
  - 브라우저 렌더링과정 (SPA cs MPM) / promise 복습 / 부트스트랩 아코디언 실습 <br /><br />
