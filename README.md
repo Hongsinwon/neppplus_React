@@ -20,7 +20,7 @@
  - useEffect() / cleanUp 함수 / useReducer() /useRef() <br /><br />
 
   <b>[2021.12.29 - 6 일차] </b> 
- - HOOK 복습 / css style( css / Module / sass / styled-components )/todoList작업 (생성, 삭제) <br /><br />
+ - HOOK 복습 / css style( css / Module / sass / styled-components ) / todoList작업 (생성, 삭제) <br /><br />
 
   <b>[2021.12.30 - 7 일차] </b> 
  - <br /><br />
