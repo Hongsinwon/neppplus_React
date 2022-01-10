@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+/*     function increase(number, callback) {
+      setTimeout(()=>{
+        const result = number + 10;
+          callback(result);
+      }, 1000);
+    } */
+
+    // 콜백지옥
+/*       increase(0, (result) => {
+        console.log(result) 
+        increase(0, (result) => {
+        console.log(result)
+          increase(0, (result) => {
+          console.log(result)
+          increase(0, (result) => {
+          console.log(result)
+          });
+          });
+        });
+      }); */
+
+      // 실행과정 // 결과 1 3 2
+/*       const aaa = () => {
+        console.log(1)
+        setTimeout(() => {
+          console.log(2)
+        }, 0)
+        console.log(3)
+      }
+      aaa(); */ 
+
+      //프로미스
+      function increase(number) {
+        const promise = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+          const result = number + 10;
+          if(result > 50) {
+            const e = new Error("Number Too Big");
+            return reject(e);
+          }
+          resolve(result);
+        }, 1000);
+      }) 
+      return promise;
+      }
+
+      //기존 promise
+ /*      increase(0) 
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .then((number)=>{
+          console.log(number);
+          return increase(number);
+        })
+        .catch((e)=>{
+          console.log(e);
+        }); */
+        
+        // async/awaite => promise기반으로 진행되야 한다.
+        async function runTasks () {
+          try{
+            let result = await increase(0);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+            result = await increase(result);
+            console.log(result);
+          } catch (e) {
+             console.log(e)
+          }
+        }
+        
+        runTasks()
+  </script>
+
+</body>
+</html>
