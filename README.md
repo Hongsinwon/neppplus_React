@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# neppplus_React
+ 
+ 2021.12.21 넵플러스(https://neppplus.com/) 
+<h2> Node.js & React.js 웹 개발 과정 수업 기록일지</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ <b>[2021.12.21 - 1 일차]</b>
+ - ES6 문법 / 절차지향 & 객체지향 이론 / IIFE(즉시실행함수)이론 <br /><br />
+ 
+ <b> [2021.12.22 - 2 일차] </b>
+ - node.js 설치 / 깃허브 + 깃허브 데스트탑 사용법 / vacode 설치 / npm create-react app ... / React 이론공부(조건부 연산자 & 삼항연산자 / props)<br /><br />
+ 
+  <b>[2021.12.23 - 3 일차] </b> 
+ - useState() / 비구조화 할당 / array.map() : 새배열 / array.filter() : true 배열 반환 / array.forEach() : 반복실행<br /><br />
 
-In the project directory, you can run:
+  <b>[2021.12.27 - 4 일차] </b> 
+ - useState() / array.map() : 새배열 <br /><br />
 
-### `npm start`
+  <b>[2021.12.28 - 5 일차] </b> 
+ - useEffect() / cleanUp 함수 / useReducer() /useRef() <br /><br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <b>[2021.12.29 - 6 일차] </b> 
+ - HOOK 복습 / css style( css / Module / sass / styled-components )  <br /><br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <b>[2021.12.30 - 7 일차] </b> 
+ -  css style( flex box/ css grid ) / todoList작업 (생성, 삭제) <br /><br />
 
-### `npm test`
+  <b>[2021.1.3 - 8 일차]  </b>
+ - todoList작업 ( check box / 밑줄작업 ) / 프로미스(promise) 1. 콜백지옥 예시 2. 기존 promise 3. new promise ( async / await ) / API연동 / 자바스크립트 이벤트 루프 이론<br /><br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <b>[2021.1.4 - 9 일차]  </b>
+ - 브라우저 렌더링과정 (SPA cs MPM) / promise 복습 / 부트스트랩 아코디언 실습 <br /><br />
 
-### `npm run build`
+  <b>[2021.1.5 - 10 일차]  </b>
+ - 부트스트랩 드롭다운 실습 / 부트스트랩 슬라이드 이미지( Pade In / Pade Out ) <br /><br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  <b>[2021.1.6 - 11 일차]  </b>
+ - 부트스트랩 슬라이드 이미지( scroll ) / 부트스트랩 모달창 / 부트스트랩 애니메이션 <br /><br />
