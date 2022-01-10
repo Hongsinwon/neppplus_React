@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+// padeIn / padeOut 
 const Carousel2 = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -44,14 +45,13 @@ const List = styled.ul`
 `;
 const Item = styled.li``;
 const Image = styled.img`
-  position: absolute;
+  position: absolute; //이미지를 다 겹친다.
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transition: opacity 0.5s ease-in;
-  //active가 없으면 opacity값 0 // 기본값 1
-  opacity: ${({active})=> !active && 0};
+  opacity: ${({active})=> !active && 0};   //active가 없으면 opacity값 0 // 기본값 1
 `;
 
 const Btn = styled.button`

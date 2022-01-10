@@ -30,7 +30,7 @@ const Bootstrap = () => {
   };
 
   return (
-    <div style={{}}>
+    <div style={{paddingLeft : 200}}>
       <Carousel3 data={carouselData} />
       <Dropdown />
       <Accordion data={accordionData} />
