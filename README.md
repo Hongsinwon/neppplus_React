@@ -1,4 +1,4 @@
-# nepp_React
+# neppplus_React
  
  2021.12.21 넵플러스(https://neppplus.com/) 
 <h2> Node.js & React.js 웹 개발 과정 수업 기록일지</h2>
