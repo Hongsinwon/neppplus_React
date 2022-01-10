@@ -23,7 +23,7 @@
  - HOOK 복습 / css style( css / Module / sass / styled-components ) / todoList작업 (생성, 삭제) <br /><br />
 
   <b>[2021.12.30 - 7 일차] </b> 
- - <br /><br />
+ -  todoList작업 ( check box / 밑줄작업 ) / 프로미스(promise) 1. 콜백지옥 예시 2. 기존 promise 3. new promise ( async / await )  <br /><br />
 
   <b>[2021.1.4 - 8 일차]  </b>
  - <br /><br />
