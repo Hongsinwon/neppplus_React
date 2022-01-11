@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Carousel3 = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  
   const Click = (n) => {
     if (n === -1 && activeIndex === 0) {
       setActiveIndex(data.length - 1);

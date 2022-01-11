@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
-const Modal1 = ({ onClose, onChange }) => {
+const Modal = ({ onClose, onChange }) => {
+
+  // 바디에 스크롤을 막기위한 기능. 
+  // 렌더링 될때마다 overflow가 실행됨으로 cleanup함수로 리셋을 진행시킨다.
   useEffect(() => {
+    //Modal 컴포넌트가 생성되면 body에 overflow:hidden 속성으로 스크롤을 막는다.
     document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = "17px";
+    document.body.style.paddingRight = "17px"; // 옆으로 밀리는 것 때문에 넣어준다.
 
     return () => {
+      //Modla컴포넌트가 제거되면 원래대로 돌려놓는다.
       document.body.style.overflow = "";
       document.body.style.paddingRight = "";
     };
   }, []);
 
   const [value, setValue] = useState("");
+
+  //바로꺼질 수 있기 때문에 이를 방지하기 위한 useState를 만든다. => collapse(무너지다)
   const [collapse, setCollapse] = useState(false);
 
   const closeClick = () => {
+     // true가 되면 사라질 준비를 한다. opacity: ${({ collapse }) => collapse && 0};
     setCollapse(true);
+    //.5초 후에 onClose를 실행단다. opacity 값 변동
     setTimeout(() => {
       onClose();
     }, 500);
@@ -24,7 +33,8 @@ const Modal1 = ({ onClose, onChange }) => {
 
   //onChange에 value값을 전달한다.
   const nickNameSave = () => {
-    if (!window.confirm("닉네임을 변경하시겠습니까?")) return;
+    //confirm은 앞에 window를 붙여야한다.
+    if (!window.confirm("닉네임을 변경하시겠습니까?")) return; //false일때 return
     onChange(value);
     onClose();
   };
@@ -50,12 +60,13 @@ const Modal1 = ({ onClose, onChange }) => {
   );
 };
 
+//css animation
 const slideIn = keyframes`
-  from {
+  from { // 시작속성
     opacity : 0;
 
   } 
-  to {
+  to { // 범용속성
     opacity : 1;
   }
 `;
@@ -130,4 +141,4 @@ const BackModal = styled.div`
   transition: opacity 0.5s;
 `;
 
-export default Modal1;
+export default Modal;
