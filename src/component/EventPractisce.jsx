@@ -1,5 +1,6 @@
 import { useState } from "react/cjs/react.development";
 
+//여러가지 input 관리
 const EventPractisce = () => {
   const [form, setForm] = useState({ userName: "", message: "" });
   const { userName, message } = form;
